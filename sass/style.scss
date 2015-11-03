@@ -1,41 +1,52 @@
 /*
-* Theme Name: HackerYou Starter Theme
-* Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Theme Name: Mike Bell Portfolio
+* Theme URI: http://mikedoesstuff.com;
+* Description: This is the online portfolio of Mike Bell
 * Version: 1.0
-* Author: HackerYou
-* Author URI: http://hackeryou.com
+* Author: Mike
+* Author URI: http://mikedoesstuff.com
 */
 
 @import 'normalize';
+@import 'grid';
 @import 'typography';
 @import 'navigation';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
+
+$blue: #4DABC5;
+$yellow: #CACF2E;
+$darkgrey: #4C4C4E;
+$medgrey: #E8E8E8;
+$lightgrey: #F3F3F3;
+
+
 /*
 ====================================
 Default Styling
 ====================================
 */
 
+html {
+	font-size: 62.5%;
+}
+
 img {
 	max-width: 100%;
 }
 
 body {
-	color: #333;
+	color: $darkgrey;
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 100%;
 }
 
 .full {

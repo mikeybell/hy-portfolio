@@ -1,15 +1,64 @@
+$blue: #4DABC5;
+$yellow: #CACF2E;
+$darkgrey: #4C4C4E;
+$medgrey: #E8E8E8;
+$lightgrey: #F3F3F3;
+
+
 a {
-	color: #BA209B;
+	color: $blue;
 	text-decoration: none;
 	&:hover {
-		color: #D424B1;
+		color: $blue;
 	}
 }
+
+/* headers */
+
+h1, h2, h3 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin: 0;
+	
+}
+
+.title {
+	text-align: center;
+}
+
+h2 {
+	color: $darkgrey;
+	font-size: 4.8rem;
+	letter-spacing: 7.5px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+}
+
+h2::after {
+	content: url(images/title_x.png);
+	position: absolute;
+	left: calc(50% - 35px);
+	top: -5px;
+	z-index: -99999;
+}
+
+h3 {
+	color: $blue;
+	font-size: 3.6rem;
+	letter-spacing: 5.5px;
+}
+
+
 
 /* paragraphs */
 
 p {
 	line-height: 1.5;
+	font-size: 1.6rem;
+	color: $darkgrey;
 }
 
 /*blockquotes*/
