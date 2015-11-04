@@ -11,6 +11,8 @@
 @import 'grid';
 @import 'typography';
 @import 'navigation';
+@import 'hero';
+@import 'bio';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
@@ -53,7 +55,39 @@ body {
 	width: 100%;
 }
 
+.main {
+	margin-top: 120px;
+}
 
+.btn {
+	padding: 15px 50px;
+	color: white;
+	text-align: center;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: 3px;
+	transition: 0.3s;
+}
+
+
+.btn-grey {
+	background: $medgrey;
+}
+
+.btn-grey:hover {
+	background: darken($medgrey, 10%);
+	color: $blue;
+}
+
+.btn-blue {
+	background: $blue;
+}
+
+.btn-blue:hover {
+	background: darken($blue, 10%);
+	color: $medgrey;
+}
 
 
 

@@ -1,0 +1,47 @@
+
+section.bio {
+	background: $darkgrey;
+	padding: 100px 0 80px;
+	border-bottom: 3px solid $blue;
+	border-top: 3px solid $blue;
+}
+
+.bio-pic {
+	@include column(5);
+	img {
+		height: auto;
+	}
+}
+
+.bio-text {
+	@include column(7);
+	p {
+		font-weight: 300;
+		color: white;
+		margin: 0 0 5px 0;
+	}
+}
+
+.bio-social .fa {
+	color: white;
+	font-size: 3rem;
+	transition: 0.3s;
+}
+
+.bio-social .fa:hover {
+	color: $blue;
+}
+
+.bio-social ul {
+	padding-left: 0;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	li {
+		margin-right: 50px;
+	}
+}
+
+
+
