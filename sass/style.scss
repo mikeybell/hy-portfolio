@@ -13,12 +13,14 @@
 @import 'navigation';
 @import 'hero';
 @import 'bio';
+@import 'portfolio';
 @import 'sidebar';
 @import 'comments';
 @import 'footer';
 
 $blue: #4DABC5;
 $yellow: #CACF2E;
+$red: #F63537;
 $darkgrey: #4C4C4E;
 $medgrey: #E8E8E8;
 $lightgrey: #F3F3F3;
@@ -42,6 +44,12 @@ body {
 	color: $darkgrey;
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 .container {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -60,10 +68,10 @@ body {
 }
 
 .btn {
-	padding: 15px 50px;
+	padding: 15px 30px;
 	color: white;
 	text-align: center;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	font-weight: 300;
 	letter-spacing: 3px;
@@ -73,11 +81,11 @@ body {
 
 .btn-grey {
 	background: $medgrey;
+	color: $blue;
 }
 
 .btn-grey:hover {
 	background: darken($medgrey, 10%);
-	color: $blue;
 }
 
 .btn-blue {
