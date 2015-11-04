@@ -1,0 +1,25 @@
+section.social {
+	background: $blue;
+	padding: 40px 0;
+}
+
+.social .fa {
+	color: white;
+	font-size: 4rem;
+	transition: 0.2s;
+}
+
+.social .fa:hover {
+	color: $darkgrey;
+}
+
+.social ul {
+	padding-left: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	li {
+		margin: 0 40px;
+	}
+}

@@ -1,5 +1,5 @@
 section.contact {
-	padding: 100px 0;
+	padding: 100px 0 20px;
 	background: $medgrey;
 }
 
@@ -35,15 +35,16 @@ div.wpcf7 {
 }
 
 input[type=submit] {
-	background: $blue;
+	background: none;
+	border: 1px $blue solid;
 	text-transform: uppercase;
-	color: white !important;
+	color: $darkgrey !important;
 	padding: 15px 0;
 	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 3px;
 	transition: 0.2s;
 	&:hover {
-		background: darken($blue, 10%);
+		background: $blue;
 	}
 }

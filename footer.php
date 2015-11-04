@@ -1,6 +1,9 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+  <a href="#top">
+  	<h2>Back to Top</h2>
+  </a>
+  	<p>Designed and Coded by Mike Bell. Let's work together. &copy; <?php echo date('Y'); ?></p>
   </div>
 </footer>
 

@@ -10,7 +10,7 @@ get_header();  ?>
 <section class="hero">
   <div class="container">
     <img src="<?php echo get_bloginfo('template_url') ?>/images/mikebell.png"/>
-    <a href="#" class="btn btn-blue connect">Let's Work Together</a>
+    <a href="#contact" class="btn btn-blue connect">Let's Work Together</a>
 
   </div> <!-- /.container -->
 </section> <!-- /section.hero -->
@@ -41,7 +41,7 @@ get_header();  ?>
             <ul>
               <?php while(has_sub_field('social')): ?>
                 <li>
-                  <a href="<?php the_sub_field('social_link'); ?>">
+                  <a href="<?php the_sub_field('social_link'); ?>" target="_blank">
                     <i class="fa fa-<?php the_sub_field('social_icon'); ?>"></i>
                   </a>
                 </li>
@@ -109,8 +109,8 @@ get_header();  ?>
                   </div> <!-- /.portfolio-tech -->
                   
                   <div class="portfolio-links">
-                    <a href="<?php the_field('live_link'); ?>" class="btn btn-blue">View Live</a>
-                    <a href="<?php the_field('github_link'); ?>" class="btn btn-grey">View Github</a>
+                    <a href="<?php the_field('live_link'); ?>" target="_blank" class="btn btn-blue">View Live</a>
+                    <a href="<?php the_field('github_link'); ?>" target="_blank" class="btn btn-grey">View Github</a>
                   </div> <!-- /.portfolio-links -->
 
                 </div> <!-- /.portfolio-info -->
@@ -157,6 +157,46 @@ get_header();  ?>
 
   </div> <!-- /.container -->
 </section> <!-- /section.contact -->
+
+
+
+<!-- SOCIAL -->
+
+<section class="social">
+  <div class="container">
+    
+    <!-- START QUERY -->
+    <?php $socialQuery = new WP_Query(
+      array(
+        'post_type'=>'bio'
+        )
+    ); ?>
+    
+    <!-- LOOP -->
+    <?php if ($socialQuery->have_posts()): ?>
+      <?php while ($socialQuery->have_posts()): $socialQuery->the_post(); ?>
+        <!-- stuff goes here -->
+        
+        <div class="social">
+          <ul>
+            <?php while(has_sub_field('social')): ?>
+              <li>
+                <a href="<?php the_sub_field('social_link'); ?>" target="_blank">
+                  <i class="fa fa-<?php the_sub_field('social_icon'); ?>"></i>
+                </a>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        </div> <!-- /.social -->
+
+      <?php endwhile; ?>    
+      <?php wp_reset_postdata(); ?>
+    <?php endif; ?>
+    <!-- END QUERY -->
+      
+    
+  </div> <!-- /.container -->
+</section> <!-- /section.social -->
 
 
 
