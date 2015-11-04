@@ -123,11 +123,40 @@ get_header();  ?>
           <?php endif; ?>
           <!-- END QUERY -->
           
-
-
-  
 </section> <!-- /section.portfolio -->
 
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+  <div class="container clearfix">
+    <div class="title">
+      <h2>Get In Touch</h2>
+    </div> <!-- /.title -->
+
+      <!-- START QUERY -->
+      <?php $contactQuery = new WP_Query(
+        array(
+          'post_type'=>'contact'
+          )
+      ); ?>
+      
+      <!-- LOOP -->
+      <?php if ($contactQuery->have_posts()): ?>
+        <?php while ($contactQuery->have_posts()): $contactQuery->the_post(); ?>
+          <!-- stuff goes here -->
+          <div class="contact-form">
+            <?php the_content(); ?>  
+          </div> <!-- /.contact-form -->
+         
+        <?php endwhile; ?>    
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
+      <!-- END QUERY -->
+
+  </div> <!-- /.container -->
+</section> <!-- /section.contact -->
 
 
 
