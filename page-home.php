@@ -64,17 +64,16 @@ get_header();  ?>
 
 <!-- PORTFOLIO -->
 <section class="portfolio">
-  <div class="container">
     <div class="title">
       <h2>Portfolio</h2>
     </div> <!-- /.title -->
-  </div> <!-- .container --> 
 
 
     <!-- START QUERY -->
     <?php $portfolioQuery = new WP_Query(
       array(
-        'post_type'=>'portfolio'
+        'post_type'=>'portfolio',
+        'order'=>'ASC'
         )
     ); ?>
     
@@ -86,43 +85,44 @@ get_header();  ?>
             <div class="project clearfix">
               <div class="container">
 
-            
-            <div class="portfolio-img">
-              <?php the_post_thumbnail('large'); ?>  
-            </div> <!-- /.portfolio-img -->
+                <div class="portfolio-img">
+                  <?php the_post_thumbnail('large'); ?>  
+                </div> <!-- /.portfolio-img -->
 
-           <div class="portfolio-info">
-              <div class="portfolio-title">
-                <h3><?php the_title(); ?></h3> 
-              </div> <!-- /.portfolio-title -->
+                <div class="portfolio-info">
+                  <div class="portfolio-title">
+                    <h3><?php the_title(); ?></h3> 
+                  </div> <!-- /.portfolio-title -->
 
-              <div class="portfolio-desc">
-                <?php the_content(); ?>
-              </div> <!-- /.portfolio-desc -->
+                  <div class="portfolio-desc">
+                    <?php the_content(); ?>
+                  </div> <!-- /.portfolio-desc -->
 
-              <div class="portfolio-tech">
-                <ul class="clearfix">
-                  <?php while(has_sub_field('technologies')): ?>
-                    <li>
-                      <?php the_sub_field('technology'); ?>
-                    </li>
-                  <?php endwhile; ?>
-                </ul>
-              </div> <!-- /.portfolio-tech -->
-              
-              <div class="portfolio-links">
-                <a href="<?php the_field('live_link'); ?>" class="btn btn-blue">View Live</a>
-                <a href="<?php the_field('github_link'); ?>" class="btn btn-grey">View Github</a>
-              </div> <!-- /.portfolio-links -->
+                  <div class="portfolio-tech">
+                    <ul class="clearfix">
+                      <?php while(has_sub_field('technologies')): ?>
+                        <li>
+                          <span class="devicons devicons-<?php the_sub_field('technology'); ?>"></span>
+                        </li>
+                      <?php endwhile; ?>
+                    </ul>
+                  </div> <!-- /.portfolio-tech -->
+                  
+                  <div class="portfolio-links">
+                    <a href="<?php the_field('live_link'); ?>" class="btn btn-blue">View Live</a>
+                    <a href="<?php the_field('github_link'); ?>" class="btn btn-grey">View Github</a>
+                  </div> <!-- /.portfolio-links -->
 
-            </div> <!-- /.portfolio-info -->
+                </div> <!-- /.portfolio-info -->
 
-          <?php endwhile; ?>    
-          <?php wp_reset_postdata(); ?>
-        <?php endif; ?>
-        <!-- END QUERY -->
-      </div> <!-- /.container -->
-    </div> <!-- /.project -->
+              </div> <!-- /.container -->
+            </div> <!-- /.project -->
+
+            <?php endwhile; ?>    
+            <?php wp_reset_postdata(); ?>
+          <?php endif; ?>
+          <!-- END QUERY -->
+          
 
 
   

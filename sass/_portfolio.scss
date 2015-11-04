@@ -1,8 +1,11 @@
 section.portfolio {
 	background: $lightgrey;
-	padding: 100px 0;
+	padding-top: 100px;
 	h2 {
 		margin-bottom: 50px;
+	}
+	p {
+		font-weight: 300;
 	}
 }
 
@@ -18,20 +21,32 @@ section.portfolio {
 }
 
 .project {
-	padding: 50px 0;
+	padding: 70px 0;
 	clear: both;
+}
+
+.project:nth-child(odd) {
+	background: $darkgrey;
+	p {
+		color: $lightgrey;
+	}
 }
 
 .portfolio-tech li {
 	float: left;
 	margin-right: 15px;
-	font-size: 1.6rem;
+	font-size: 3rem;
 	font-weight: 400;
 	color: $red;
 }
 
 .portfolio-links {
-	margin-top: 50px;
+	margin-top: 30px;
+	a {
+		display: inline-block;
+		width: calc(50% - 15px);
+		padding: 15px 10px;
+	}
 	.btn-blue {
 		margin-right: 15px;
 	}
