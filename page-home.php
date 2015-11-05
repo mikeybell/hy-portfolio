@@ -51,6 +51,16 @@ get_header();  ?>
 
         </div> <!-- /.bio-text -->
 
+        <!-- <div class="skill-box">
+          <ul class="clearfix">
+            <?php while(has_sub_field('skills')): ?>
+              <li>
+                <span class="devicons devicons-<?php the_sub_field('skill'); ?>"></span>
+              </li>
+            <?php endwhile; ?>
+          </ul>
+        </div> <!-- /.skill-box --> -->
+
       <?php endwhile; ?>    
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>

@@ -15,10 +15,9 @@ header {
 	font-size: 3rem;
 	float: right;
 	margin-right: 50px;
-}
-
-a.burger {
+	cursor: pointer;
 	color: $darkgrey;
+	transition: 0.2s;
 	&:hover {
 		color: $blue;
 	}
@@ -48,7 +47,7 @@ ul.menu {
 	li {
 		margin: 30px 0;
 		a {
-			color: $blue;
+			color: $red;
 			font-size: 1.6rem;
 			font-weight: 300;
 			text-transform: uppercase;

@@ -3,7 +3,7 @@
   <a href="#top">
   	<h2>Back to Top</h2>
   </a>
-  	<p>Designed and Coded by Mike Bell. Let's work together. &copy; <?php echo date('Y'); ?></p>
+  	<p>Designed and Coded by Mike Bell. Let's work together. &copy; <?php echo date('Y'); ?>.</p>
   </div>
 </footer>
 

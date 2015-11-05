@@ -29,7 +29,7 @@ section.bio {
 }
 
 .bio-social .fa:hover {
-	color: $blue;
+	color: $red;
 }
 
 .bio-social ul {
@@ -41,6 +41,23 @@ section.bio {
 	li {
 		margin-right: 50px;
 	}
+}
+
+.skill-box {
+	clear: both;
+	margin: 0 auto;
+	padding: 60px 10px 0;
+	ul {
+		margin: 0 auto;
+	}
+}
+
+.skill-box li {
+	float: left;
+	margin-right: 15px;
+	font-size: 4rem;
+	font-weight: 400;
+	color: $red;
 }
 
 

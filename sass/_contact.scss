@@ -4,47 +4,78 @@ section.contact {
 }
 
 .contact-form {
-	margin-top: 100px;
+	margin: 100px auto 0;
+	width: 60%;
 	p {
 		color: $darkgrey;
 		margin: 0 0 30px 0;
 	}
 }
 
+.ninja-forms-required-items {
+	font-size: 1.2rem;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+
+#ninja_forms_field_1_label, #ninja_forms_field_2_label, #ninja_forms_field_3_label {
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+
+label .ninja-forms-req-symbol {
+	color: $red;
+}
+
+.ninja-forms-required-items .ninja-forms-req-symbol {
+	color: $red;
+}
+
+#ninja_forms_field_3 {
+	height: 80px;
+}
+
 input, textarea {
 	border: none;
-	background: $lightgrey;
+	border-bottom: 1px $blue solid;
+	background: none;
+	font-size: 1.6rem;
+	font-weight: 300;
 	width: 100%;
+	padding: 10px;
+	margin-bottom: 30px;
 	&:focus {
 		outline: none;
 	}
 }
 
-input {
-	padding: 10px 10px;
-}
-
-form p {
-	font-size: 1.4rem;
-	font-weight: 300;
-}
-
-div.wpcf7 {
-	width: 50%;
-	margin: 0 auto !important; 
+#nf_submit_1 {
+	text-align: center;
 }
 
 input[type=submit] {
-	background: none;
 	border: 1px $blue solid;
 	text-transform: uppercase;
 	color: $darkgrey !important;
-	padding: 15px 0;
+	padding: 15px 30px;
 	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 3px;
 	transition: 0.2s;
 	&:hover {
 		background: $blue;
+	}
+}
+
+#ninja_forms_form_1_response_msg {
+	text-align: center;
+	text-transform: uppercase;
+	color: $darkgrey;
+	font-size: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 3px;
+	p {
+		margin-bottom: 0;
 	}
 }

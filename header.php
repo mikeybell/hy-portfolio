@@ -8,7 +8,7 @@
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600' rel='stylesheet' type='text/css'>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <!-- Dev Icons -->
@@ -27,7 +27,7 @@
   <div class="container">
   
   <a href="#top"><img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"></a>
-  <a href="#" class="burger">&#9776;</a>
+  <div class="burger">&#9776;</div>
 
     <nav>
       <!-- <i class="fa fa-close"></i> -->
