@@ -30,26 +30,35 @@ nav {
 	background: $darkgrey;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -25%;
 	width: 25%;
 	height: 100vh;
-	display: none;
+	// display: none;
 }
 
 .fa-close {
 	color: $blue;
 	font-size: 3rem;
 	float: right;
+	cursor: pointer;
+	transition: 0.2s;
+	&:hover {
+		color: $medgrey;
+	}
 }
 
 ul.menu {
-	display: none;
+	// display: none;
 	li {
 		margin: 30px 0;
 		a {
-			color: #blue;
+			color: $blue;
 			font-size: 1.6rem;
 			text-transform: uppercase;
+			transition: 0.2s;
+			&:hover {
+				color: $medgrey;
+			}
 		}
 	}
 }
