@@ -13,9 +13,6 @@ header {
 
 .burger {
 	font-size: 3rem;
-	// position: absolute;
-	// top: 12px;
-	// right: 50px;
 	float: right;
 	margin-right: 50px;
 }
@@ -27,18 +24,32 @@ a.burger {
 	}
 }
 
-ul.menu {
+nav {
 	margin: 0;
-	padding: 0;
+	padding: 5% 3%;
+	background: $darkgrey;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 25%;
+	height: 100vh;
+	display: none;
+}
+
+.fa-close {
+	color: $blue;
+	font-size: 3rem;
+	float: right;
+}
+
+ul.menu {
 	display: none;
 	li {
-		display: inline;
-		margin-right: 10px;
+		margin: 30px 0;
 		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			color: #blue;
+			font-size: 1.6rem;
+			text-transform: uppercase;
 		}
 	}
 }

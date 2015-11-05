@@ -29,11 +29,14 @@
   <img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
   <a href="#" class="burger">&#9776;</a>
 
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
+    <nav>
+      <i class="fa fa-close"></i>
+      <?php wp_nav_menu( array(
+        'container' => false,
+        'theme_location' => 'primary'
+      )); ?>
+    </nav>
+    
   </div> <!-- /.container -->
 </header><!--/.header-->
 
