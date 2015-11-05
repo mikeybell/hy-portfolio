@@ -7,7 +7,7 @@
 get_header();  ?>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="top">
   <div class="container">
     <img src="<?php echo get_bloginfo('template_url') ?>/images/mikebell.png"/>
     <a href="#contact" class="btn btn-blue connect">Let's Work Together</a>
@@ -16,7 +16,7 @@ get_header();  ?>
 </section> <!-- /section.hero -->
 
 <!-- BIO -->
-<section class="bio">
+<section class="bio" id="about">
   <div class="container clearfix">
     
     <!-- START QUERY -->
@@ -63,7 +63,7 @@ get_header();  ?>
 
 
 <!-- PORTFOLIO -->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
     <div class="title">
       <h2>Portfolio</h2>
     </div> <!-- /.title -->
@@ -129,7 +129,7 @@ get_header();  ?>
 
 <!-- CONTACT -->
 
-<section class="contact">
+<section class="contact" id="contact">
   <div class="container clearfix">
     <div class="title">
       <h2>Get In Touch</h2>

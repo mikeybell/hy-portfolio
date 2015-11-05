@@ -14,7 +14,7 @@
   <!-- Dev Icons -->
   <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
 
-  <?php // Load our CSS ?>
+  <?php // Load CSS ?>
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 
   <?php wp_head(); ?>
@@ -26,11 +26,12 @@
 <header>
   <div class="container">
   
-  <img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"/>
+  <a href="#top"><img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"></a>
   <a href="#" class="burger">&#9776;</a>
 
     <nav>
-      <i class="fa fa-close"></i>
+      <!-- <i class="fa fa-close"></i> -->
+      <img class="nav-close" src="<?php echo get_bloginfo('template_url') ?>/images/title_x_sm.png">
       <?php wp_nav_menu( array(
         'container' => false,
         'theme_location' => 'primary'

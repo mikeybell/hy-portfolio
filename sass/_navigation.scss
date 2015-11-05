@@ -26,34 +26,31 @@ a.burger {
 
 nav {
 	margin: 0;
-	padding: 5% 3%;
+	padding: 15px 50px;
 	background: $darkgrey;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: -25%;
-	width: 25%;
+	right: -300px;
+	width: 300px;
 	height: 100vh;
 	// display: none;
 }
 
-.fa-close {
-	color: $blue;
-	font-size: 3rem;
+.nav-close {
 	float: right;
 	cursor: pointer;
-	transition: 0.2s;
-	&:hover {
-		color: $medgrey;
-	}
+	margin-right: 15px;
 }
 
 ul.menu {
 	// display: none;
+	margin-top: 80px;
 	li {
 		margin: 30px 0;
 		a {
 			color: $blue;
 			font-size: 1.6rem;
+			font-weight: 300;
 			text-transform: uppercase;
 			transition: 0.2s;
 			&:hover {

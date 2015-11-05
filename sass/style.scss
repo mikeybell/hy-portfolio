@@ -44,12 +44,17 @@ img {
 
 body {
 	color: $darkgrey;
+	position: relative;
 }
 
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+}
+
+a, a:active, a:focus {
+   outline: none;
 }
 
 .container {
