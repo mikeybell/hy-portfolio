@@ -15,5 +15,9 @@ $(function(){
 		speed: 400
 	});
 
+	$('#mikebell').circleType({
+		radius: 600
+	});
+
 });
 

@@ -63,6 +63,7 @@ input[type=submit] {
 	font-weight: 300;
 	letter-spacing: 3px;
 	transition: 0.2s;
+	box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
 	&:hover {
 		background: $blue;
 	}
