@@ -37,6 +37,7 @@ h1 {
 	z-index: 1;
 	display: inline-block;
 	margin: 0 auto -10px;
+	margin-left: -6px;
 	text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.8), 0px 2px 0px rgba(255, 255, 255, 0.8), 0px 5px 0px rgba(77, 171, 197, 0.8);
 }
 
@@ -207,3 +208,43 @@ img {
 	float: left;
 	clear: both;
 }
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 600px) {
+	h1 {
+		font-size: 6rem;
+	}
+}
+
+@media all and (max-width: 440px) {
+	h1 {
+		font-size: 5rem;
+	}
+
+	h1::after {
+		top: 5px;
+	}
+}
+
+@media all and (max-width: 380px) {
+	h1 {
+		font-size: 4rem;
+	}
+
+	p.sub {
+		font-size: 1.5rem;
+	}
+}
+
+
+
+
+
+
+

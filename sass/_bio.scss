@@ -60,5 +60,74 @@ section.bio {
 	color: $red;
 }
 
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 850px) {
+
+	.bio-pic {
+		@include column(8);	
+		@include push(2);
+		margin-bottom: 30px;
+	}
+
+	.bio-text {
+		@include column(8);
+		@include push(2);
+	}
+
+	.bio-social ul {
+		justify-content: center;
+		margin-top: 30px;
+		li {
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+	}
+}
+
+@media all and (max-width: 700px) {
+
+	.bio-pic {
+		@include column(10);	
+		@include push(1);
+		margin-bottom: 30px;
+	}
+
+	.bio-text {
+		@include column(10);
+		@include push(1);
+	}
+
+}
+
+@media all and (max-width: 420px) {
+
+	.bio-social ul {
+		justify-content: space-around;
+		li {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+}
+
+@media all and (max-width: 400px) {
+
+	.bio-pic {
+		@include column(12);	
+		margin-bottom: 15px;
+	}
+
+	.bio-text {
+		@include column(12);
+	}
+
+}
+
 
 
