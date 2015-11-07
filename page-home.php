@@ -63,7 +63,7 @@ get_header();  ?>
               </li>
             <?php endwhile; ?>
           </ul>
-        </div> <!-- /.skill-box --> -->
+        </div> <!-- /.skill-box -->
 
       <?php endwhile; ?>    
       <?php wp_reset_postdata(); ?>

@@ -23,3 +23,20 @@ section.social {
 		margin: 0 40px;
 	}
 }
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 500px) {
+
+	.social ul {
+		justify-content: space-around;
+		li {
+			margin: 0;
+		}
+	}
+	
+}

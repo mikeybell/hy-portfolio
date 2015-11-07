@@ -1,3 +1,6 @@
+$heather: #717171;
+
+
 section.portfolio {
 	background: $lightgrey;
 	padding-top: 100px;
@@ -53,4 +56,66 @@ section.portfolio {
 	.btn-blue {
 		margin-right: 15px;
 	}
+}
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 768px) {
+
+	.portfolio-img {
+		@include column(8);
+		@include push(2);
+		margin-bottom: 30px;
+	}
+
+	.portfolio-info {
+		@include column(8)
+		@include push(2);
+	}
+	
+}
+
+@media all and (max-width: 630px) {
+
+	.portfolio-img {
+		@include column(10);
+		@include push(1);
+		margin-bottom: 30px;
+	}
+
+	.portfolio-info {
+		@include column(10);
+		@include push(1);
+	}
+	
+}
+
+@media all and (max-width: 480px) {
+
+	.portfolio-img {
+		@include column(12);
+		margin-bottom: 30px;
+	}
+	
+}
+
+@media all and (max-width: 430px) {
+
+	.portfolio-links {
+		a {
+			padding: 15px 0px;
+			letter-spacing: 1px;
+			font-size: 1.4rem;
+		}
+	}
+
+	.portfolio-tech li {
+		margin-right: 10px;
+	}
+	
 }

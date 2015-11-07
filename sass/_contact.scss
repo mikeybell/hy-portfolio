@@ -4,8 +4,11 @@ section.contact {
 }
 
 .contact-form {
-	margin: 100px auto 0;
-	width: 60%;
+	@include column(8);
+	@include push(2);
+	margin-top: 100px;
+	// margin: 100px auto 0;
+	// width: 60%;
 	p {
 		color: $darkgrey;
 		margin: 0 0 30px 0;
@@ -62,6 +65,7 @@ input[type=submit] {
 	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 3px;
+	border-radius: 0;
 	transition: 0.2s;
 	box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
 	&:hover {
@@ -79,4 +83,20 @@ input[type=submit] {
 	p {
 		margin-bottom: 0;
 	}
+}
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 650px) {
+
+	.contact-form {
+		@include column(10);
+		@include push(1);
+		margin-top: 100px;
+	}
+
 }

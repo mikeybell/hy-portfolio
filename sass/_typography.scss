@@ -232,6 +232,15 @@ Media Queries
 	}
 }
 
+@media all and (max-width: 400px) {
+
+	h2 {
+		font-size: 4.3rem;
+		letter-spacing: 7px;
+	}
+	
+}
+
 @media all and (max-width: 380px) {
 	h1 {
 		font-size: 4rem;
