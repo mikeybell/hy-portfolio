@@ -23,7 +23,7 @@
 
 <body <?php body_class(); ?>>
 
-<header class="animated slideInDown">
+<header>
   <div class="container">
   
   <a href="#top"><img src="<?php echo get_bloginfo('template_url') ?>/images/logo.png"></a>

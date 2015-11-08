@@ -34,10 +34,10 @@ get_header();  ?>
     <?php if ($bioQuery->have_posts()): ?>
       <?php while ($bioQuery->have_posts()): $bioQuery->the_post(); ?>
         <!-- stuff goes here -->
-        <div class="bio-pic wow fadeInLeft">
+        <div class="bio-pic">
           <?php the_post_thumbnail('full'); ?>  
         </div> <!-- /.bio-pic -->
-        <div class="bio-text wow fadeInRight">
+        <div class="bio-text">
           <?php the_content(); ?>
         
 
@@ -96,14 +96,14 @@ get_header();  ?>
         <?php if ($portfolioQuery->have_posts()): ?>
           <?php while ($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
             <!-- stuff goes here -->
-            <div class="project clearfix">
+            <div class="project clearfix wow fadeInUp">
               <div class="container">
 
-                <div class="portfolio-img wow fadeInLeft">
+                <div class="portfolio-img">
                   <?php the_post_thumbnail('large'); ?>  
                 </div> <!-- /.portfolio-img -->
 
-                <div class="portfolio-info wow fadeInRight">
+                <div class="portfolio-info">
                   <div class="portfolio-title">
                     <h3><?php the_title(); ?></h3> 
                   </div> <!-- /.portfolio-title -->

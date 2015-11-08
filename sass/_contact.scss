@@ -126,6 +126,20 @@ Media Queries
 		@include push(1);
 		margin-top: 50px;
 	}
+}
+
+@media all and (max-width: 468px) {
+
+	.email {
+		width: 100%;
+	}
+
+	.contact-sub .btn {
+		padding-left: 10px;
+		padding-right: 10px;
+		letter-spacing: 1px;
+		font-size: 1.4rem;
+	}
 
 
 }
