@@ -66,3 +66,22 @@ ul.menu {
 		}
 	}
 }
+
+
+/*
+====================================
+Media Queries
+====================================
+*/
+
+@media all and (max-width: 400px) {
+	
+	header img {
+		margin-left: 20px;
+	}
+
+	.burger {
+		margin-right: 20px;
+	}
+
+}

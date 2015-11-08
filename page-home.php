@@ -34,10 +34,10 @@ get_header();  ?>
     <?php if ($bioQuery->have_posts()): ?>
       <?php while ($bioQuery->have_posts()): $bioQuery->the_post(); ?>
         <!-- stuff goes here -->
-        <div class="bio-pic">
+        <div class="bio-pic animated fadeInUp">
           <?php the_post_thumbnail('full'); ?>  
         </div> <!-- /.bio-pic -->
-        <div class="bio-text">
+        <div class="bio-text animated fadeInUp">
           <?php the_content(); ?>
         
 
