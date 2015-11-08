@@ -1,5 +1,7 @@
 $(function(){
 
+	new WOW().init();
+
 	$('.burger').on('click', function(){
 		$("nav").animate({right: '0'}, 250, 'swing');
 		$("body").animate({left: '-200px'}, 250, 'swing');

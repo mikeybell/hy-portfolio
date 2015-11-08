@@ -10,10 +10,10 @@ get_header();  ?>
 <section class="hero" id="top">
   <div class="container">
     <!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/mikebell.png"/> -->
-    <h1 id="mikebell">Mike Bell</h1>
-    <p class="sub">Front-End Developer</p>
-    <p class="sub and">&</p>
-    <p class="sub">Designer</p>
+    <h1 id="mikebell" class="animated bounceInDown">Mike Bell</h1>
+    <p class="sub animated zoomInLeft">Front-End Developer</p>
+    <p class="sub and animated zoomIn">&</p>
+    <p class="sub animated zoomInRight">Designer</p>
     <a href="#contact" class="btn btn-blue connect">Let's Work Together</a>
 
   </div> <!-- /.container -->
@@ -34,10 +34,10 @@ get_header();  ?>
     <?php if ($bioQuery->have_posts()): ?>
       <?php while ($bioQuery->have_posts()): $bioQuery->the_post(); ?>
         <!-- stuff goes here -->
-        <div class="bio-pic">
+        <div class="bio-pic wow fadeInLeft">
           <?php the_post_thumbnail('full'); ?>  
         </div> <!-- /.bio-pic -->
-        <div class="bio-text">
+        <div class="bio-text wow fadeInRight">
           <?php the_content(); ?>
         
 
@@ -78,7 +78,7 @@ get_header();  ?>
 
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
-    <div class="title">
+    <div class="title wow fadeInUp">
       <h2>Portfolio</h2>
     </div> <!-- /.title -->
 
@@ -99,11 +99,11 @@ get_header();  ?>
             <div class="project clearfix">
               <div class="container">
 
-                <div class="portfolio-img">
+                <div class="portfolio-img wow fadeInLeft">
                   <?php the_post_thumbnail('large'); ?>  
                 </div> <!-- /.portfolio-img -->
 
-                <div class="portfolio-info">
+                <div class="portfolio-info wow fadeInRight">
                   <div class="portfolio-title">
                     <h3><?php the_title(); ?></h3> 
                   </div> <!-- /.portfolio-title -->
@@ -145,7 +145,7 @@ get_header();  ?>
 
 <section class="contact" id="contact">
   <div class="container clearfix">
-    <div class="title">
+    <div class="title wow fadeInUp">
       <h2>Get In Touch</h2>
     </div> <!-- /.title -->
 
@@ -160,7 +160,7 @@ get_header();  ?>
       <?php if ($contactQuery->have_posts()): ?>
         <?php while ($contactQuery->have_posts()): $contactQuery->the_post(); ?>
           <!-- stuff goes here -->
-          <div class="contact-form">
+          <div class="contact-form wow fadeInUp">
             <?php the_content(); ?>  
           </div> <!-- /.contact-form -->
          
@@ -176,7 +176,7 @@ get_header();  ?>
 
 <!-- SOCIAL -->
 
-<section class="social">
+<section class="social-main">
   <div class="container">
     
     <!-- START QUERY -->
@@ -191,7 +191,7 @@ get_header();  ?>
       <?php while ($socialQuery->have_posts()): $socialQuery->the_post(); ?>
         <!-- stuff goes here -->
         
-        <div class="social">
+        <div class="social wow zoomIn">
           <ul>
             <?php while(has_sub_field('social')): ?>
               <li>
@@ -210,13 +210,7 @@ get_header();  ?>
       
     
   </div> <!-- /.container -->
-</section> <!-- /section.social -->
-
-
-
-
-
-
+</section> <!-- /section.social-main -->
 
 
 
