@@ -70,6 +70,9 @@ h2::after {
 	top: -5px;
 }
 
+section.contact h2::after {
+	left: calc(50% - 39px);
+}
 
 h3 {
 	color: $blue;

@@ -151,7 +151,7 @@ get_header();  ?>
 
     <div class="contact-sub wow fadeInUp">
       <p>If you are looking for a developer with a strong visual background, or just want to say hi, I would love to hear from you!</p>
-      <div class="email">
+      <div class="email-addy">
         <a href="mailto:hello@mikedoesstuff.com" class="btn btn-grey">hello@mikedoesstuff.com</a>
       </div> <!-- /.email -->
     </div> <!-- /.contact-sub -->
