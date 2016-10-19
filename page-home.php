@@ -87,7 +87,10 @@ get_header();  ?>
     <?php $portfolioQuery = new WP_Query(
       array(
         'post_type'=>'portfolio',
-        'order'=>'ASC'
+        'meta_key'=>'order',
+        'meta_type'=>'NUMERIC',
+        'oderby'=>'meta_value_num',
+        'order'=>'DESC'
         )
     ); ?>
     
@@ -95,6 +98,7 @@ get_header();  ?>
         <!-- LOOP -->
         <?php if ($portfolioQuery->have_posts()): ?>
           <?php while ($portfolioQuery->have_posts()): $portfolioQuery->the_post(); ?>
+
             <!-- stuff goes here -->
             <div class="project clearfix wow fadeInUp">
               <div class="container">
@@ -124,7 +128,9 @@ get_header();  ?>
                   
                   <div class="portfolio-links">
                     <a href="<?php the_field('live_link'); ?>" target="_blank" class="btn btn-blue">View Live</a>
-                    <a href="<?php the_field('github_link'); ?>" target="_blank" class="btn btn-grey">View Github</a>
+                    <?php if(get_field('github_link')): ?>
+                      <a href="<?php the_field('github_link'); ?>" target="_blank" class="btn btn-grey">View Github</a>
+                    <?php endif; ?>
                   </div> <!-- /.portfolio-links -->
 
                 </div> <!-- /.portfolio-info -->
