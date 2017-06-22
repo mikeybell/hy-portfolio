@@ -1,14 +1,11 @@
 .hero {
 	background: url(images/hero_bg_texture.jpg) fixed center top;
 	background-size: cover;
-	padding-top: 80px;
+	padding: 160px 0 120px;
 	text-align: center;
 	position: relative;
 }
 
-.hero img {
-	max-width: 60%;
-}
 
 .connect {
 	position: absolute;
@@ -27,11 +24,6 @@ Media Queries
 ====================================
 */
 
-@media all and (max-width: 768px) {
-	.hero img {
-		max-width: 100%;
-	}
-}
 
 @media all and (max-width: 600px) {
 	.connect {

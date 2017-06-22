@@ -9,12 +9,10 @@ get_header();  ?>
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="container">
-    <!-- <img src="<?php echo get_bloginfo('template_url') ?>/images/mikebell.png"/> -->
-    <!-- <h1 id="mikebell" class="animated bounceInDown">Mike Bell</h1>
+    <h1 id="mikebell" class="animated bounceInDown">Mike Bell</h1>
     <p class="sub animated zoomInLeft">Front-End Developer</p>
     <p class="sub and animated zoomIn">&</p>
-    <p class="sub animated zoomInRight">Designer</p> -->
-    <img src="<?php echo get_bloginfo('template_url') ?>/images/hero_name.png"/>
+    <p class="sub animated zoomInRight">Designer</p>
     <a href="#contact" class="btn btn-blue connect">Let's Work Together</a>
 
   </div> <!-- /.container -->
