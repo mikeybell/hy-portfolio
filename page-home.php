@@ -119,7 +119,7 @@ get_header();  ?>
                     <ul class="clearfix">
                       <?php while(has_sub_field('technologies')): ?>
                         <li>
-                          <span class="devicons devicons-<?php the_sub_field('technology'); ?>"></span>
+                          <span class="devicon-<?php the_sub_field('technology'); ?>"></span>
                         </li>
                       <?php endwhile; ?>
                     </ul>
