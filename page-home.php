@@ -78,7 +78,7 @@ get_header();  ?>
 <!-- PORTFOLIO -->
 <section class="portfolio" id="portfolio">
     <div class="title wow fadeInUp">
-      <h2>Portfolio</h2>
+      <h2>Stuff I've done</h2>
     </div> <!-- /.title -->
 
 
